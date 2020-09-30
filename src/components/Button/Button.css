@@ -1,0 +1,70 @@
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.noFill {
+  border: 1px solid #525ffb;
+  color: #525ffb;
+  background-color: transparent;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  background-image: linear-gradient(45deg, #525ffb 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  transition: background 300ms ease-in-out;
+}
+
+.Fill {
+  background-color: #525ffb;
+  border: none;
+  width: 150px;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 12px 23px;
+  font-size: 16px;
+  font-weight: bolder;
+  background-image: linear-gradient(45deg, #ffffff 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  transition: background 300ms ease-in-out;
+}
+
+.noFill:hover {
+  background-position: 0;
+  color: #ffffff;
+}
+.Fill:hover {
+  background-position: 0;
+  color: #525ffb;
+  border: 1px solid #525ffb;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+@media (max-width: 1200px) {
+  .Fill {
+    width: 100px;
+    padding: 12px 16px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 900px) {
+  .Fill {
+    margin-top: 10px;
+
+    padding: 12px 16px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 600px) {
+  .Fill {
+    width: 90px;
+
+    font-size: 13px;
+  }
+}

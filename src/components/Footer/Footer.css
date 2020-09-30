@@ -1,0 +1,35 @@
+.footer {
+  margin-top: 220px;
+  border-top: 1px solid #e6e6e6;
+  height: 400px;
+  background-color: transparent;
+  text-align: center;
+}
+
+.footer__text {
+  padding-top: 90px;
+}
+.footer__text > h1 {
+  font-size: 40px;
+}
+.footer__text > p {
+  color: #1e1c24;
+  width: 250px;
+  margin: auto;
+}
+
+.footer__contact {
+  padding-top: 30px;
+}
+
+.divider {
+  width: 12px;
+  height: auto;
+  display: inline-block;
+}
+
+@media (max-width: 900px) {
+  .footer {
+    margin-top: 260px;
+  }
+}

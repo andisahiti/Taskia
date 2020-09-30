@@ -1,0 +1,32 @@
+.input {
+  width: 250px;
+  height: 20px;
+  border: 1px solid #e6e6e6;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+::placeholder {
+  opacity: 0.4;
+}
+
+.input:focus {
+  outline: none !important;
+  border: 1px solid #525ffb;
+}
+
+@media (max-width: 1200px) {
+  .input {
+    width: 180px;
+  }
+}
+@media (max-width: 900px) {
+  .input {
+    width: 140px;
+  }
+}
+@media (max-width: 600px) {
+  .input {
+    width: 150px;
+  }
+}

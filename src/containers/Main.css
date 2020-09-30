@@ -1,0 +1,75 @@
+.main {
+  object-fit: contain;
+  height: 500px;
+  display: flex;
+  padding: 0 50px;
+}
+
+.main__right {
+  text-align: center;
+  flex: 0.55;
+  background-color: transparent;
+}
+
+.main__left {
+  text-align: left;
+  flex: 0.45;
+  background-color: transparent;
+}
+
+.main > .main__right > img {
+  padding-top: 20px;
+  width: 45vw;
+  min-width: 100px;
+}
+.main > .main__left > .main__text {
+  padding-top: 140px;
+}
+.main > .main__left > .main__contact {
+  padding-top: 15px;
+}
+
+.main > .main__left > .main__text > p {
+  width: 35vw;
+  color: #b1aaaa;
+}
+.main > .main__left > .main__text > h1 {
+  width: 40vw;
+  font-weight: 800;
+  font-size: 50px;
+}
+
+@media (max-width: 1200px) {
+  .main > .main__left > .main__text > h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 900px) {
+  .main > .main__left > .main__text > h1 {
+    font-size: 30px;
+  }
+  .main > .main__left > .main__text > p {
+    font-size: 13px;
+  }
+
+  .main__right {
+    flex: 0.45;
+  }
+
+  .main__left {
+    flex: 0.55;
+  }
+}
+@media (max-width: 600px) {
+  .main > .main__left > .main__text > h1 {
+    font-size: 28px;
+  }
+
+  .main__right {
+    flex: 0.25;
+  }
+
+  .main__left {
+    flex: 0.65;
+  }
+}

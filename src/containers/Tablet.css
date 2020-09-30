@@ -1,0 +1,87 @@
+.tablet {
+  margin-top: 200px;
+  object-fit: contain;
+  height: 500px;
+  display: flex;
+  padding: 0 50px;
+  position: relative;
+}
+
+.tablet__right {
+  text-align: left;
+  flex: 0.45;
+  background-color: transparent;
+  padding-left: 30px;
+}
+
+.tablet__left {
+  text-align: left;
+  flex: 0.55;
+  background-color: transparent;
+}
+
+.tablet__left > img {
+  width: 100%;
+}
+.tablet__right > .tablet__text {
+  width: 70%;
+}
+.tablet__right > .tablet__text > p {
+  color: #b1aaaa;
+  font-size: 17px;
+  padding: 20px 0;
+}
+.tablet__right > .tablet__text > h1 {
+  color: #1e1c24;
+  font-size: 40px;
+}
+
+@media (max-width: 1400px) {
+  .tablet__right > .tablet__text > p {
+    padding: 10px 0px;
+  }
+}
+@media (max-width: 1300px) {
+  .tablet__right > .tablet__text > h1 {
+    font-size: 35px;
+  }
+
+  .tablet__right > .tablet__text > p {
+    font-size: 15px;
+    padding: 0px 0px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .tablet__right > .tablet__text > h1 {
+    font-size: 30px;
+  }
+  .tablet__right {
+    width: 100%;
+  }
+
+  .tablet__right > .tablet__text > p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 950px) {
+  .tablet {
+    flex-direction: column;
+  }
+  .tablet__left {
+    text-align: center;
+  }
+  .tablet__left > .tablet__text {
+    text-align: center;
+    padding-left: 10%;
+  }
+  .tablet__left > img {
+    width: 100%;
+  }
+
+  .tablet__right {
+    padding-left: 50px;
+    text-align: center;
+  }
+}

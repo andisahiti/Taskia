@@ -1,0 +1,38 @@
+.app {
+  position: relative;
+}
+.scrollTop {
+  position: fixed;
+  width: 40px;
+  left: 95%;
+  bottom: 20%;
+  color: #525ffb;
+  align-items: center;
+  height: 20px;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+}
+
+.scrollTop:hover {
+  transform: scale(1.2);
+}
+.scrollTop:active {
+  transform: scale(0.9);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: 900px) {
+  .scrollTop {
+    left: 90%;
+  }
+}
